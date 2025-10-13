@@ -1,4 +1,4 @@
-# Project: Long Hair Identification Logic
+# Project: Long Hair Identifier
 
 This project implements a system to predict a person's gender based on a special set of rules involving their estimated age and hair length. It was developed to demonstrate skills in building a multi-stage machine learning pipeline, creating a user interface, and solving complex, logic-based problems.
 
