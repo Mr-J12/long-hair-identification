@@ -62,8 +62,50 @@ Follow these steps to set up and run the project locally.
 #### 1. Clone the Repository
 ```bash
 git clone [https://github.com/Mr-J12/long-hair-identification.git](https://github.com/Mr-J12/long-hair-identification.git)
-"# {Long Hair Identification}" 
+"# {Long Hair Identification}"
+```
 
-#### 2.Run the Application
+#### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+#### 3.Run the Application
 ```bash
 streamlit run app.py
+```
+
+## ❌ If Model is failed to run due to any reason 
+
+then follow these steps
+
+#### 1.Kaggle API Setup (One-Time)
+
+##### 1.1: Create a Kaggle account.
+##### 1.2: Go to your Account page (https://www.kaggle.com/account) and click "Create New Token" in the API section. This will download a kaggle.json file.
+##### 1.3: Place this file in the required directory i.e "Windows: C:\Users\<Your-Username>\.kaggle\kaggle.json"
+
+#### 2. Prepare the Data
+Run the preparation script. This will download the dataset from Kaggle (over 100MB), extract it, and generate the labels.csv file.
+```bash
+python prepare_data.py
+```
+
+#### 3. Train the Models
+Run the training script for each of the three tasks. This process is computationally intensive and will take time.
+```bash
+# Train the age model
+python train.py --task age
+
+# Train the gender model
+python train.py --task gender
+
+# Train the hair model
+python train.py --task hair
+```
+
+#### 4. Run the Application
+Once all three models are trained and saved in the models/ folder, run the Streamlit GUI.
+```bash
+streamlit run app.py
+```
