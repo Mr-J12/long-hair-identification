@@ -58,7 +58,7 @@ After implementing fine-tuning and training for 15 epochs, the models achieved t
 ## 📁 Project Structure
 ```
 .
-├── grap/                 # Folder to store the RAVDESS actor folders
+├── graph/                # Folder to png for training history for the models
 ├── saved_models/         # Trained models will be saved here
 ├── app.py                # The main Streamlit application script
 ├── prepare_data.py       # Script for downloading the dataset and storing it
