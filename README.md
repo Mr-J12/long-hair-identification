@@ -45,20 +45,20 @@ After implementing fine-tuning and training for 15 epochs, the models achieved t
 - **Gender Model Accuracy**: ~90%
 - **Hair Model Accuracy**: ~70%
 
-#### Training History
+### Training History
 
 **Gender Model Performance:**
-![Gender Training History](graphs/gender_training_history_v2.png)
+![Gender Training History](output/gender_training_history.png)
 
-**Age Model Performance:**
-![Age Training History](graphs/age_training_history_v2.png)
+**Hair Model Performance:**
+![Age Training History](output/hair_training_history.png)
 
 ---
 
 ## 📁 Project Structure
 ```
 .
-├── graph/                # Folder to png for training history for the models
+├── output/                # Folder to png for training history for the models
 ├── saved_models/         # Trained models will be saved here
 ├── app.py                # The main Streamlit application script
 ├── prepare_data.py       # Script for downloading the dataset and storing it
